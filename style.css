@@ -1,0 +1,156 @@
+:root {
+    --main-purple: #7d7aff;
+    --dark-purple: #5c59cc;
+    --bg-light: #f4f5fa;
+    --text-gray: #8e8e93;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-light);
+}
+
+/* LOGIN STYLES */
+.login-page {
+    display: flex;
+    height: 100vh;
+}
+
+.login-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.illustration-side {
+    flex: 1;
+    background-color: #d1d0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 320px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 25px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--main-purple);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* DASHBOARD STYLES */
+.dashboard-page {
+    display: grid;
+    grid-template-columns: 200px 1fr 280px;
+    height: 100vh;
+}
+
+.sidebar {
+    background: white;
+    padding: 30px 20px;
+    border-right: 1px solid #eee;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.sidebar li {
+    padding: 15px 10px;
+    color: var(--text-gray);
+    cursor: pointer;
+}
+
+.sidebar li.active {
+    color: var(--main-purple);
+    font-weight: bold;
+}
+
+.content {
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 200px;
+}
+
+.card.purple {
+    background: var(--main-purple);
+    color: white;
+}
+
+.card.white {
+    background: white;
+    border: 1px solid #eee;
+}
+
+.activity-table {
+    width: 100%;
+    background: var(--main-purple);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    border-spacing: 0;
+}
+
+.activity-table th, .activity-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.right-panel {
+    background: white;
+    padding: 30px;
+    border-left: 1px solid #eee;
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: #eee;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.signout {
+    background: none;
+    color: #ff4d4d;
+    margin-top: 50px;
+}

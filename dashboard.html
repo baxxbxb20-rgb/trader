@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoBoard - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+    <nav class="sidebar">
+        <div class="logo">CryptoBoard</div>
+        <ul>
+            <li class="active">Home</li>
+            <li>Assets</li>
+            <li>Chart</li>
+            <li>Support</li>
+            <li>Reports</li>
+            <li>Settings</li>
+        </ul>
+        <button class="guide-btn">Guide</button>
+    </nav>
+
+    <main class="content">
+        <header>Dashboard > Home</header>
+        
+        <section class="assets">
+            <h2>ASSETS <span class="more">More Assets →</span></h2>
+            <div class="cards-container">
+                <div class="card purple">
+                    <p>Bitcoin</p>
+                    <div class="price">$ 1,820</div>
+                    <div class="stats">Profit +2.87% | Loss -0.17%</div>
+                </div>
+                <div class="card white">
+                    <p>Ethereum</p>
+                    <div class="price">$ 1,100</div>
+                    <div class="stats">Profit +2.87% | Loss -0.17%</div>
+                </div>
+                <div class="card new-asset">+ New Asset</div>
+            </div>
+        </section>
+
+        <section class="activity">
+            <h2>ACTIVITY <span class="more">More Activity →</span></h2>
+            <table class="activity-table">
+                <thead>
+                    <tr>
+                        <th>Transactions</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionList">
+                    <tr>
+                        <td>Ethereum Purchased</td>
+                        <td>0.0154 ETH</td>
+                        <td>$10.00</td>
+                        <td>Pending</td>
+                        <td>Feb 21, 2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <aside class="right-panel">
+        <div class="profile">
+            <h3>Trader Profile</h3>
+            <div class="avatar"></div>
+            <h4 id="userNameDisplay">Han Ji Pyeong</h4>
+            <button class="edit-btn">Edit Profile</button>
+        </div>
+        <div class="account-info">
+            <p>Date: <span id="currentDate">March 4, 2026</span></p>
+            <p>Balance: <strong>$999</strong></p>
+        </div>
+        <div class="mini-assets">
+            <p>Bitcoin: 23.5 BTC</p>
+            <p>Ethereum: 190.45 ETH</p>
+        </div>
+        <button id="logoutBtn" class="signout">Sign Out</button>
+    </aside>
+
+    <script src="auth.js"></script>
+</body>
+</html>
