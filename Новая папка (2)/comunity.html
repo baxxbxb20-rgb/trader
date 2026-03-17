@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NeonGear Community</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:radial-gradient(circle at top,#071018,#020406);
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#05090e;
+border-bottom:1px solid #0f1a24;
+}
+
+.logo{
+color:#00ffd5;
+font-size:22px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+opacity:0.8;
+}
+
+.menu a:hover{
+color:#39ff14;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 60px;
+max-width:1200px;
+margin:auto;
+}
+
+.hero h1{
+font-size:52px;
+margin:0;
+}
+
+.hero span{
+color:#39ff14;
+}
+
+.hero p{
+opacity:0.7;
+margin-top:15px;
+}
+
+/* REVIEWS GRID */
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:40px 60px 80px;
+max-width:1200px;
+margin:auto;
+}
+
+/* CARD */
+
+.card{
+background:#0b1118;
+padding:25px;
+border-radius:12px;
+border:1px solid #101a24;
+transition:0.3s;
+}
+
+.card:hover{
+border:1px solid #39ff14;
+box-shadow:0 0 20px #39ff1430;
+transform:translateY(-5px);
+}
+
+.user{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.avatar{
+width:42px;
+height:42px;
+border-radius:50%;
+background:linear-gradient(45deg,#39ff14,#00ffd5);
+}
+
+.name{
+font-weight:bold;
+}
+
+.stars{
+color:gold;
+margin:10px 0;
+}
+
+/* FORM */
+
+.review-form{
+max-width:600px;
+margin:0 auto 100px;
+background:#0b1118;
+padding:30px;
+border-radius:12px;
+border:1px solid #101a24;
+}
+
+.review-form h2{
+margin-top:0;
+}
+
+input,textarea,select{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:15px;
+background:#05090e;
+border:1px solid #1a2633;
+color:white;
+border-radius:6px;
+}
+
+button{
+background:#00ffd5;
+border:none;
+padding:14px;
+font-weight:bold;
+cursor:pointer;
+width:100%;
+}
+
+button:hover{
+background:#39ff14;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">NEONGEAR</div>
+
+<div class="menu">
+<a href="./code.html">Shop</a>
+<a href="./b.html">Build Your PC</a>
+<a href=".">Community</a>
+<a href="./support.html">Support</a>
+</div>
+
+</nav>
+
+
+<div class="hero">
+
+<h1>Community <span>Reviews</span></h1>
+<p>See what gamers say about NeonGear builds and RTX 5090 performance.</p>
+
+</div>
+
+
+
+<div class="reviews" id="reviews">
+
+
+<div class="card">
+<div class="user">
+<div class="avatar"></div>
+<div class="name">Alex</div>
+</div>
+<div class="stars">★★★★★</div>
+<p>The Titan X15 with RTX 5090 is unreal. Cyberpunk runs at ultra with ray tracing and 200+ fps.</p>
+</div>
+
+<div class="card">
+<div class="user">
+<div class="avatar"></div>
+<div class="name">Maya</div>
+</div>
+<div class="stars">★★★★★</div>
+<p>OLED display looks insane. Probably the best gaming laptop I’ve owned.</p>
+</div>
+
+<div class="card">
+<div class="user">
+<div class="avatar"></div>
+<div class="name">Daniel</div>
+</div>
+<div class="stars">★★★★☆</div>
+<p>Super fast build and delivery. Performance is incredible for AAA games.</p>
+</div>
+
+<div class="card">
+<div class="user">
+<div class="avatar"></div>
+<div class="name">Chris</div>
+</div>
+<div class="stars">★★★★★</div>
+<p>Runs Unreal Engine projects perfectly. Great laptop for dev and gaming.</p>
+</div>
+
+<div class="card">
+<div class="user">
+<div class="avatar"></div>
+<div class="name">Sofia</div>
+</div>
+<div class="stars">★★★★★</div>
+<p>Cooling system is amazing. Laptop stays cool even during long gaming sessions.</p>
+</div>
+
+<div class="card">
+<div class="user">
+<div class="avatar"></div>
+<div class="name">Ryan</div>
+</div>
+<div class="stars">★★★★☆</div>
+<p>Keyboard and RGB look great. Build quality feels premium.</p>
+</div>
+
+<div class="card">
+<div class="user">
+<div class="avatar"></div>
+<div class="name">Oliver</div>
+</div>
+<div class="stars">★★★★★</div>
+<p>Best gaming laptop of 2026. RTX 5090 is a monster.</p>
+</div>
+
+<div class="card">
+<div class="user">
+<div class="avatar"></div>
+<div class="name">Lena</div>
+</div>
+<div class="stars">★★★★★</div>
+<p>Perfect for streaming and gaming at the same time.</p>
+</div>
+
+</div>
+
+
+
+<div class="review-form">
+
+<h2>Leave Your Review</h2>
+
+<input id="username" placeholder="Your name">
+
+<textarea id="message" placeholder="Write your review"></textarea>
+
+<select id="rating">
+<option>★★★★★</option>
+<option>★★★★☆</option>
+<option>★★★☆☆</option>
+<option>★★☆☆☆</option>
+<option>★☆☆☆☆</option>
+</select>
+
+<button onclick="addReview()">Post Review</button>
+
+</div>
+
+
+<script>
+
+function addReview(){
+
+let name=document.getElementById("username").value
+let message=document.getElementById("message").value
+let rating=document.getElementById("rating").value
+
+let card=document.createElement("div")
+card.className="card"
+
+card.innerHTML=`
+<div class="user">
+<div class="avatar"></div>
+<div class="name">${name}</div>
+</div>
+<div class="stars">${rating}</div>
+<p>${message}</p>
+`
+
+document.getElementById("reviews").prepend(card)
+
+}
+
+</script>
+
+</body>
+</html>

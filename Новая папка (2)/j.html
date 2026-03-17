@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>RTX High-Performance Gaming Laptop | Titan Series</title>
+  <!-- BEGIN: Tailwind CSS Setup -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gaming: {
+              primary: '#00ff41', /* Matrix/Gaming Green */
+              dark: '#0a0a0a',
+              surface: '#1a1a1a',
+              accent: '#3b82f6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- END: Tailwind CSS Setup -->
+  <!-- BEGIN: Custom Styles -->
+  <style data-purpose="custom-animations">
+    @keyframes pulse-green {
+      0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 65, 0.4);
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(0, 255, 65, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 65, 0);
+      }
+    }
+
+    .buy-now-btn {
+      animation: pulse-green 2s infinite;
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #00ff41, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+  <style data-purpose="layout-tweaks">
+    body {
+      background-color: #0a0a0a;
+      color: #e5e7eb;
+    }
+
+    .spec-row:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.03);
+    }
+  </style>
+  <!-- END: Custom Styles -->
+</head>
+
+<body class="font-sans antialiased">
+  <!-- BEGIN: Navigation -->
+  <nav class="sticky top-0 z-50 bg-gaming-dark/90 backdrop-blur-md border-b border-white/10 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="text-2xl font-black italic tracking-tighter text-white">TITAN<span
+          class="text-gaming-primary">GEN</span></div>
+      <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-gray-400">
+        <a class="hover:text-gaming-primary transition" href="./code.html">Limited Drops</a>
+        <a class="hover:text-gaming-primary transition" href="./b.html"> Build Your Pc</a>
+        <a class="hover:text-gaming-primary transition" href="./support.html">Support</a>
+          <a class="hover:text-gaming-accent transition-colors" href="./comunity.html">Community</a>
+      </div>
+      <button class="bg-white/10 hover:bg-white/20 p-2 rounded-full">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <!-- END: Navigation -->
+  <main class="max-w-7xl mx-auto px-4 py-8 md:py-16">
+    <!-- BEGIN: Hero & Configuration Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20" data-purpose="product-main-view">
+      <!-- Image Showcase -->
+      <div class="flex flex-col gap-4">
+        <div
+          class="bg-gaming-surface rounded-2xl overflow-hidden aspect-video flex items-center justify-center border border-white/5 relative group">
+          <img alt="Titan RTX Gaming Laptop Front View"
+            class="object-contain w-full h-full transform transition duration-700 group-hover:scale-105"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9y1OSYuY7OkGX-1C8oc6FfNKI_RW39yQiuVv0laI38vckTsYH10F3xkN7d1iUuwsPeu3MVUuKMT10GsOD8YLJtSJNHLhnL1MaGw6wUI6x3Ufx66ky8BZuc8GPFM3TnIHVOIxEs1KzVAY1zsC1Mw_6rdcazj9vp0Oa1d6679mfCbP3cPBnbSQVuvA7FkUKa9OFcpGS3N3-Bm7Qn7O2OldfF3RubZNtZ95xKT57nV-Qw7vD3_L--A-N6WONYHcLBXJ5DGuZzeYUlc0" />
+          <div
+            class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1 rounded text-xs text-gaming-primary font-mono uppercase tracking-widest">
+            4K 144Hz Display</div>
+        </div>
+        <div class="grid grid-cols-4 gap-4">
+          <div
+            class="bg-gaming-surface rounded-lg aspect-square border border-white/10 hover:border-gaming-primary cursor-pointer transition">
+            <img alt="Side View" class="w-full h-full object-cover rounded-lg"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwUIy5tX8OiJz3a9XPcf3-MMqd7EHMI9r8uA00zFuWX0C7Ukkyw8S5IsBenq4-38dCGwrKMeSOR5GMTla5RUQpFanH2aeSZyJfXh487kckkrNnHGcYVM5_pzxIQ0DrC4Nfpyc25HkRGWm0I06I9inkUPwBo6CHgdoxuuRz5oOCEyQm05VccbkkVja3FkVAOJ2FpH2HMpT1p7ASlQX-s-dDQpaE0w5FaoahW4vmtNUhgtSjLagGqwVicmLYzIZoft09NvniR9LPtFg" />
+          </div>
+          <div
+            class="bg-gaming-surface rounded-lg aspect-square border border-white/10 hover:border-gaming-primary cursor-pointer transition">
+            <img alt="Keyboard View" class="w-full h-full object-cover rounded-lg"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQZ-th4Ya7zWS6FsDbgzTz8ivMpR3wCcR5V4_F34AslN_rGZPeO9OkI1gHdwI1LlIm8ObLAJh4bLpOSe9Tw5oByyioFavpgr7S063VJeP40vrAi454F4R0O6gplIOFl4CPSNXX-b3aSw31nQn6oRvwDC5Hqm4USJ0ZzNqCO2oUlSb_pByGgL0dOOE1PsWvBt60fydhGdGlslqG4X6Mm7IrDKimLliCyXdgjTP4dyU2Mi0bJrCLHI1SmZ0oDM-9bjhnT2b4zFzQbGQ" />
+          </div>
+          <div
+            class="bg-gaming-surface rounded-lg aspect-square border border-white/10 hover:border-gaming-primary cursor-pointer transition">
+            <img alt="Ports View" class="w-full h-full object-cover rounded-lg"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBCh5vSZjJbLCZCYLFnK9pD9BEMf1wJ4nRY5Y07PgVH-S4RjPFjLEQNCaiQxRsAs7S_SeGEjmSLvCU0vi7TuSrZ0NA4U8o-pR0br7-S0A4s2v8B1plRTw_YQPbTsKHATNZn-QZ5m0oVy8YGHY25ANMTZrjOjSgFXuzhmGFUGv4JJCN_KTlvAzkhnsnztI5rtyx-vFbuNY3bbRIAlSSKEcyZ33M7fQrtNq-6EcNOMSpGoJ4soLC2ZuQ4ub5JGwBuDl5dhc4jYnVrRU" />
+          </div>
+          <div
+            class="bg-gaming-surface rounded-lg aspect-square border border-white/10 hover:border-gaming-primary cursor-pointer transition">
+            <img alt="Thermal View" class="w-full h-full object-cover rounded-lg"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXK1kRfoHdoJ_HV9eVR2mg6bAddz9ZE-ENiOjYQ8MSM2JXLfX77VP4orE9wXY7e8Q7plbNSTtf7qSiFFZ-0MHC9DVtI965qv_i8BwpDAOx8xO5QxegWRJ22jtX_SjmyQEACmUEibiFIkothVqpQf88HTlAyeUZrhI957m3Crrg7-5juYDxmGjZosx7SKdJSkdqNFDZ5vrv8x-LseEh8Z22FZxLNpKxSctZmVbo5JVjh58t6w6dX93H6eEVXRHaCLJFg_VgUaYO48Y" />
+          </div>
+        </div>
+      </div>
+      <!-- Config & Pricing -->
+      <div class="flex flex-col space-y-8" data-purpose="purchase-configuration">
+        <div>
+          <span class="text-gaming-primary font-mono text-sm tracking-widest uppercase">Next-Gen Performance</span>
+          <h1 class="text-5xl font-extrabold mt-2 mb-4 leading-tight">Titan X Pro <br /><span class="gradient-text">RTX
+              5090 Edition</span></h1>
+          <p class="text-gray-400 text-lg">Dominate the competition with the latest Intel Core i9-13980HX and NVIDIA
+            GeForce RTX 5090. Built for professionals and hardcore gamers.</p>
+        </div>
+        <!-- Configuration Options -->
+        <div class="space-y-6">
+          <!-- RAM -->
+          <div data-purpose="config-ram">
+            <label class="block text-sm font-semibold uppercase tracking-wider text-gray-300 mb-3">Memory (RAM)</label>
+            <div class="grid grid-cols-2 gap-3">
+              <button class="border-2 border-gaming-primary bg-gaming-primary/10 p-4 rounded-xl text-left transition">
+                <span class="block font-bold">32GB DDR5</span>
+                <span class="text-xs text-gray-400">Included</span>
+              </button>
+              <button
+                class="border border-white/10 bg-white/5 p-4 rounded-xl text-left hover:border-gaming-primary/50 transition">
+                <span class="block font-bold">64GB DDR5</span>
+                <span class="text-xs text-gray-400">+$249.00</span>
+              </button>
+            </div>
+          </div>
+          <!-- SSD -->
+          <div data-purpose="config-ssd">
+            <label class="block text-sm font-semibold uppercase tracking-wider text-gray-300 mb-3">Storage (NVMe
+              SSD)</label>
+            <div class="grid grid-cols-2 gap-3">
+              <button
+                class="border border-white/10 bg-white/5 p-4 rounded-xl text-left hover:border-gaming-primary/50 transition">
+                <span class="block font-bold">1TB PCIe 4.0</span>
+                <span class="text-xs text-gray-400">Included</span>
+              </button>
+              <button class="border-2 border-gaming-primary bg-gaming-primary/10 p-4 rounded-xl text-left transition">
+                <span class="block font-bold">2TB PCIe 4.0</span>
+                <span class="text-xs text-gray-400">+$149.00</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pricing & Action -->
+        <div class="bg-gaming-surface p-6 rounded-2xl border border-white/10 space-y-4">
+          <div class="flex items-end justify-between">
+            <div>
+              <span class="text-gray-400 text-sm line-through">$3,499.00</span>
+              <div class="text-4xl font-black text-white">$2,999.99</div>
+            </div>
+            <div class="text-right">
+              <span class="text-gaming-primary text-xs font-bold uppercase block mb-1">Financing Available</span>
+              <span class="text-gray-300 text-sm">As low as <strong>$125/mo</strong></span>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+            <button
+              class="buy-now-btn bg-gaming-primary hover:bg-green-400 text-black font-black uppercase py-4 rounded-xl transition-all tracking-widest text-sm">
+              Buy Now
+            </button>
+            <button
+              class="bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold uppercase py-4 rounded-xl transition-all text-sm">
+              Monthly Financing
+            </button>
+          </div>
+          <p class="text-center text-xs text-gray-500">Free 2-day shipping &amp; 2-year warranty included.</p>
+        </div>
+      </div>
+    </section>
+    <!-- END: Hero & Configuration Section -->
+    <!-- BEGIN: Detailed Specs Table -->
+    <section class="mb-20" id="specs">
+      <div class="flex items-center gap-4 mb-8">
+        <h2 class="text-3xl font-bold uppercase tracking-tighter">Technical Specifications</h2>
+        <div class="h-px flex-grow bg-white/10"></div>
+      </div>
+      <div class="bg-gaming-surface rounded-2xl border border-white/10 overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="spec-row p-6 border-b border-white/5 flex flex-col sm:flex-row sm:justify-between">
+            <span class="text-gray-400 font-medium uppercase text-xs tracking-widest">Processor</span>
+            <span class="text-white font-bold">Intel® Core™ i9-13980HX (24-Cores, 36MB Cache, up to 5.60 GHz)</span>
+          </div>
+          <div class="spec-row p-6 border-b border-white/5 flex flex-col sm:flex-row sm:justify-between">
+            <span class="text-gray-400 font-medium uppercase text-xs tracking-widest">Graphics</span>
+            <span class="text-white font-bold">NVIDIA® GeForce RTX™ 5090 16GB GDDR6X</span>
+          </div>
+          <div class="spec-row p-6 border-b border-white/5 flex flex-col sm:flex-row sm:justify-between">
+            <span class="text-gray-400 font-medium uppercase text-xs tracking-widest">Display</span>
+            <span class="text-white font-bold">17.3" UHD+ (3840 x 2400) 144Hz, 100% Adobe RGB</span>
+          </div>
+          <div class="spec-row p-6 border-b border-white/5 flex flex-col sm:flex-row sm:justify-between">
+            <span class="text-gray-400 font-medium uppercase text-xs tracking-widest">Battery</span>
+            <span class="text-white font-bold">99.9 Whr Lithium-Ion (Fast-Charge Supported)</span>
+          </div>
+          <div class="spec-row p-6 border-b border-white/5 flex flex-col sm:flex-row sm:justify-between">
+            <span class="text-gray-400 font-medium uppercase text-xs tracking-widest">Keyboard</span>
+            <span class="text-white font-bold">Per-key RGB mechanical switches by Cherry MX</span>
+          </div>
+          <div class="spec-row p-6 border-b border-white/5 flex flex-col sm:flex-row sm:justify-between">
+            <span class="text-gray-400 font-medium uppercase text-xs tracking-widest">Weight</span>
+            <span class="text-white font-bold">2.8 kg (6.17 lbs)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: Detailed Specs Table -->
+    <!-- BEGIN: User Reviews -->
+    <section class="mb-20" data-purpose="reviews-section">
+      <div class="flex justify-between items-end mb-8">
+        <div>
+          <h2 class="text-3xl font-bold uppercase tracking-tighter">Player Feedback</h2>
+          <div class="flex items-center gap-2 mt-2">
+            <div class="flex text-gaming-primary">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span class="text-sm font-bold text-white">4.9 / 5.0</span>
+            <span class="text-xs text-gray-500">(128 Verified Purchases)</span>
+          </div>
+        </div>
+        <button class="text-sm font-bold text-gaming-primary hover:underline uppercase tracking-widest">Write a
+          Review</button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Review 1 -->
+        <div class="bg-gaming-surface p-6 rounded-xl border border-white/10">
+          <div class="flex text-gaming-primary mb-3">★★★★★</div>
+          <p class="text-gray-300 italic mb-4">"Absolutely phenomenal performance. Handles Cyberpunk at 4K with ray
+            tracing without breaking a sweat. Cooling system is surprisingly quiet for this power."</p>
+          <div class="flex items-center gap-3">
+            <div
+              class="w-8 h-8 rounded-full bg-gaming-accent flex items-center justify-center text-xs font-bold text-white uppercase">
+              JD</div>
+            <span class="text-sm font-semibold">John D. <span class="text-xs text-gray-500 ml-2">Verified
+                Buyer</span></span>
+          </div>
+        </div>
+        <!-- Review 2 -->
+        <div class="bg-gaming-surface p-6 rounded-xl border border-white/10">
+          <div class="flex text-gaming-primary mb-3">★★★★★</div>
+          <p class="text-gray-300 italic mb-4">"The screen is the best I've ever seen on a laptop. Color accuracy is
+            perfect for my video editing work during the day and gaming at night."</p>
+          <div class="flex items-center gap-3">
+            <div
+              class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-xs font-bold text-white uppercase">
+              SK</div>
+            <span class="text-sm font-semibold">Sarah K. <span class="text-xs text-gray-500 ml-2">Verified
+                Buyer</span></span>
+          </div>
+        </div>
+        <!-- Review 3 -->
+        <div class="bg-gaming-surface p-6 rounded-xl border border-white/10">
+          <div class="flex text-gaming-primary mb-3">★★★★☆</div>
+          <p class="text-gray-300 italic mb-4">"Heavy beast, but you know what you're getting. Port selection is great.
+            Wish the power brick was a bit smaller though."</p>
+          <div class="flex items-center gap-3">
+            <div
+              class="w-8 h-8 rounded-full bg-orange-500 flex items-center justify-center text-xs font-bold text-white uppercase">
+              ML</div>
+            <span class="text-sm font-semibold">Marcus L. <span class="text-xs text-gray-500 ml-2">Verified
+                Buyer</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: User Reviews -->
+    <!-- BEGIN: Related Products -->
+    <section class="mb-10" data-purpose="related-products">
+      <h2 class="text-xl font-bold uppercase tracking-widest text-gray-400 mb-8">Complete Your Battlestation</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Accessory 1 -->
+        <div class="group cursor-pointer">
+          <div
+            class="bg-gaming-surface rounded-xl border border-white/10 p-4 mb-3 group-hover:border-gaming-primary transition">
+            <img alt="High-DPI Mouse" class="w-full h-auto"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEbLp-SxqcQ-bG5pHX6WP6wlXfDZJi0K6oqmThczRbO8I-eNxgA-Ms8r9XpAU-6IkaWJ9F5Qj0LLtGjF-z5VSmyteAi9Kvu2l-kaP1G9PsUGc1X_cE3tSxWaL79bXAbipqJjzkfOu9Of1M-AgU7NT7-VYEY9yhvf8FntWs-MQOqySE9S7Tj3v38ddpj26Tndd5pGWQcdssGVjb-eB8fXjGMb6_JYhMGTcrFTvhUaPHSkU92bguMZ92Hr_XwK249TBnNcYZgW0BMys" />
+          </div>
+          <h3 class="font-bold text-sm">Titan Apex Pro Mouse</h3>
+          <p class="text-gaming-primary font-mono text-sm mt-1">$129.00</p>
+        </div>
+        <!-- Accessory 2 -->
+        <div class="group cursor-pointer">
+          <div
+            class="bg-gaming-surface rounded-xl border border-white/10 p-4 mb-3 group-hover:border-gaming-primary transition">
+            <img alt="Mechanical Keyboard" class="w-full h-auto"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUJUUbX99OkbDKHuwd7PzNRwcNF0OAAm7I-JIQ7uI4oAF2M7ZuD-nOjv_3Iv1h_BscD44mIbMGja5GZ7ltUE5fMH4MnbV7myxCgj4IqxoIe16N8jW-CKcvgts4eP45blWqZSOFvzzzNPCtkUTHl_N07TOHiB472U5VY-oRHia8AgSsbWbxiBj2PZdEuInnUahl66P_O_-M9Nc93BoyF2jGDEYF5ZHko9xZwKjSXR11Sbk-O_FTUtFwAiYlIUldL9_b4qD6kCtVdFQ" />
+          </div>
+          <h3 class="font-bold text-sm">Titan Strike TKL</h3>
+          <p class="text-gaming-primary font-mono text-sm mt-1">$179.00</p>
+        </div>
+        <!-- Accessory 3 -->
+        <div class="group cursor-pointer">
+          <div
+            class="bg-gaming-surface rounded-xl border border-white/10 p-4 mb-3 group-hover:border-gaming-primary transition">
+            <img alt="Wireless Headset" class="w-full h-auto"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCvA6qrB0xT6q3R1c5FRar8hsiyuxF7NIsBKdHWGj1qi3KRlcma-J7kPXKboHUCttOCwbRhmKBEJj41pGoDIoNuebVAPIQjMblS9CySkmkP8KfwWiOPOR9y__lW1giCivFJpaeqzjSZFqWJosRr-qDRJg6ePkuT8VdSSRGiLKXxfQA5QIg4OE_VXrfTZZslFdiJA4T3ZM5UUF6CBp_sCL480eiSae31dc1d-2nMJPDrXMt4CRxaG9e4-Oe2uwT0IJk5eBxwonmgzM" />
+          </div>
+          <h3 class="font-bold text-sm">Titan Sonic 7.1 Wireless</h3>
+          <p class="text-gaming-primary font-mono text-sm mt-1">$249.00</p>
+        </div>
+        <!-- Accessory 4 -->
+        <div class="group cursor-pointer">
+          <div
+            class="bg-gaming-surface rounded-xl border border-white/10 p-4 mb-3 group-hover:border-gaming-primary transition">
+            <img alt="Hard-shell Backpack" class="w-full h-auto"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFOmnEsngz32lzfby9jRciR8sCISG77JazqrwbPKcoIXQKw8cGAAQ8bHZQa0Sp7fGgXA61byNvbT2x45nykr7kk-yWFD1YeE_R7z6XGUxw_GZM2tGMZ7LYkolUCZyLV11KCfnEcGmZTgpfW5SAfurZJTld48uF67lntZDaTEfDhZlcalpSu3k98-89lMZqlSmh6vfS0JCNEb0TB8eUE2XHClRq621zt-_0MnSNwLgjzSBeGh1yXbroXUIQM3TXYW6M-aLAT1DOh-M" />
+          </div>
+          <h3 class="font-bold text-sm">Titan Armor Carry-Case</h3>
+          <p class="text-gaming-primary font-mono text-sm mt-1">$99.00</p>
+        </div>
+      </div>
+    </section>
+    <!-- END: Related Products -->
+  </main>
+  <!-- BEGIN: Footer -->
+  <footer class="bg-black border-t border-white/5 py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="text-2xl font-black italic tracking-tighter text-white mb-6">TITAN<span
+          class="text-gaming-primary">GEN</span></div>
+      <div class="flex justify-center gap-8 mb-8 text-sm text-gray-500 uppercase font-bold tracking-widest">
+        <a class="hover:text-white transition" href="#">Privacy Policy</a>
+        <a class="hover:text-white transition" href="#">Terms of Service</a>
+        <a class="hover:text-white transition" href="#">Global Warranty</a>
+        <a class="hover:text-white transition" href="#">Contact Us</a>
+      </div>
+      <p class="text-xs text-gray-600">© 2023 TitanGen Gaming Systems. All rights reserved. NVIDIA, GeForce, and RTX are
+        trademarks of NVIDIA Corporation.</p>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+</body>
+
+</html>

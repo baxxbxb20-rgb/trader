@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Gaming Laptops &amp; PCs | High Performance Gear</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'gaming-dark': '#0a0a0a',
+            'gaming-card': '#1a1a1a',
+            'gaming-accent': '#00ff41', 
+            'gaming-border': '#333333'
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom Styles for UI Enhancements -->
+  <style data-purpose="custom-animations">
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0a0a0a;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body class="bg-gaming-dark text-gray-100 font-sans antialiased">
+  <!-- BEGIN: MainHeader -->
+  <header class="sticky top-0 z-50 bg-gaming-dark/95 border-b border-gaming-border backdrop-blur-sm"
+    data-purpose="site-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-gaming-accent rounded-sm flex items-center justify-center">
+          <span class="text-black font-bold">X</span>
+        </div>
+        <span class="text-xl font-black tracking-tighter uppercase italic">Apex Gear</span>
+      </div>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+        <a class="text-gaming-accent" href="#">Shop</a>
+        <a class="hover:text-gaming-accent transition-colors" href="./code.html">Limited Drops</a>
+        <a class="hover:text-gaming-accent transition-colors" href="./support.html">Support</a>
+        <a class="hover:text-gaming-accent transition-colors" href="./comunity.html">Community</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <button class="p-2 hover:bg-gaming-card rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor"
+            viewbox="0 0 24 24">
+            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2"></path>
+          </svg></button>
+        <div class="relative">
+          <button class="p-2 hover:bg-gaming-card rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor"
+              viewbox="0 0 24 24">
+              <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg></button>
+          <span
+            class="absolute top-0 right-0 bg-gaming-accent text-black text-[10px] font-bold px-1 rounded-full">3</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END: MainHeader -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- BEGIN: Sidebar Filters -->
+      <aside class="w-full lg:w-64 flex-shrink-0" data-purpose="filter-sidebar">
+        <div class="sticky top-24 space-y-8">
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Filters</h2>
+            <!-- GPU Category -->
+            <div class="mb-6">
+              <h3 class="text-sm font-bold text-white mb-3">Graphics Card</h3>
+              <div class="space-y-2">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input
+                    class="rounded bg-gaming-card border-gaming-border text-gaming-accent focus:ring-gaming-accent focus:ring-offset-gaming-dark"
+                    type="checkbox" />
+                  <span class="text-sm text-gray-400 group-hover:text-white">RTX 40-Series</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input
+                    class="rounded bg-gaming-card border-gaming-border text-gaming-accent focus:ring-gaming-accent focus:ring-offset-gaming-dark"
+                    type="checkbox" />
+                  <span class="text-sm text-gray-400 group-hover:text-white">RTX 30-Series</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input
+                    class="rounded bg-gaming-card border-gaming-border text-gaming-accent focus:ring-gaming-accent focus:ring-offset-gaming-dark"
+                    type="checkbox" />
+                  <span class="text-sm text-gray-400 group-hover:text-white">GTX Series</span>
+                </label>
+              </div>
+            </div>
+            <!-- Brand Category -->
+            <div class="mb-6">
+              <h3 class="text-sm font-bold text-white mb-3">Brand</h3>
+              <div class="space-y-2">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input
+                    class="rounded bg-gaming-card border-gaming-border text-gaming-accent focus:ring-gaming-accent focus:ring-offset-gaming-dark"
+                    type="checkbox" />
+                  <span class="text-sm text-gray-400 group-hover:text-white">ASUS ROG</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input
+                    class="rounded bg-gaming-card border-gaming-border text-gaming-accent focus:ring-gaming-accent focus:ring-offset-gaming-dark"
+                    type="checkbox" />
+                  <span class="text-sm text-gray-400 group-hover:text-white">Razer Blade</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input
+                    class="rounded bg-gaming-card border-gaming-border text-gaming-accent focus:ring-gaming-accent focus:ring-offset-gaming-dark"
+                    type="checkbox" />
+                  <span class="text-sm text-gray-400 group-hover:text-white">MSI</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input
+                    class="rounded bg-gaming-card border-gaming-border text-gaming-accent focus:ring-gaming-accent focus:ring-offset-gaming-dark"
+                    type="checkbox" />
+                  <span class="text-sm text-gray-400 group-hover:text-white">Alienware</span>
+                </label>
+              </div>
+            </div>
+            <!-- Price Range -->
+            <div class="mb-6">
+              <h3 class="text-sm font-bold text-white mb-3">Price Range</h3>
+              <input class="w-full h-1 bg-gaming-border rounded-lg appearance-none cursor-pointer accent-gaming-accent"
+                max="5000" min="500" step="100" type="range" />
+              <div class="flex justify-between mt-2 text-[10px] text-gray-500 font-mono">
+                <span>$500</span>
+                <span>$5,000+</span>
+              </div>
+            </div>
+            <!-- Processor -->
+            <div class="mb-6">
+              <h3 class="text-sm font-bold text-white mb-3">Processor</h3>
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  class="px-2 py-1 text-xs border border-gaming-border hover:border-gaming-accent hover:text-gaming-accent transition-all rounded">Intel
+                  i9</button>
+                <button
+                  class="px-2 py-1 text-xs border border-gaming-border hover:border-gaming-accent hover:text-gaming-accent transition-all rounded">Intel
+                  i7</button>
+                <button
+                  class="px-2 py-1 text-xs border border-gaming-border hover:border-gaming-accent hover:text-gaming-accent transition-all rounded">Ryzen
+                  9</button>
+                <button
+                  class="px-2 py-1 text-xs border border-gaming-border hover:border-gaming-accent hover:text-gaming-accent transition-all rounded">Ryzen
+                  7</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- END: Sidebar Filters -->
+      <!-- BEGIN: Product Grid -->
+      <section class="flex-1" data-purpose="product-list">
+        <!-- Grid Header -->
+        <div class="flex items-center justify-between mb-8">
+          <h1 class="text-2xl font-bold tracking-tight">Gaming Laptops &amp; PCs <span
+              class="text-gray-500 font-normal text-sm ml-2">(48 results)</span></h1>
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-gray-500 uppercase font-bold">Sort by:</span>
+            <select class="bg-gaming-dark text-xs border-none focus:ring-0 text-white font-bold cursor-pointer">
+              <option>Newest Arrivals</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Best Performance</option>
+            </select>
+          </div>
+        </div>
+        <!-- The Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <!-- Product Card 1 -->
+          <article
+            class="product-card bg-gaming-card border border-gaming-border rounded-lg overflow-hidden transition-all duration-300 flex flex-col"
+            data-purpose="product-item">
+            <div class="relative group">
+              <img alt="Gaming Laptop" class="w-full aspect-[4/3] object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwlIjJzKZUFJaUDoBfZxxjDPFxl_4xyq0YuY_nxdRP5IlqrCwufjlRHi5KEuAon2ypmYaX-0LoQheAHJQBcxda4OqrdlDHPT0p1k4SXozZbUQlDU41fwQ6meAFIMo8Iv5FRlsYEy98f5xEDYbDc7W8v5MILyt-CO4u4M8GrHE9_aCNbn37v2mKyMCE7tHHJzZNZSh3uIqnHgRoXDH9eg33mNNrAbnNyuQsqesylABp0nQp6gWEOQmn5vnaSdvZM0UClBE5Mwj17Jg" />
+              <div
+                class="absolute top-3 left-3 bg-gaming-accent text-black text-[10px] font-black px-2 py-1 rounded uppercase">
+                New Release</div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-bold text-lg leading-tight hover:text-gaming-accent cursor-pointer transition-colors">
+                  AeroBlade X-15 Pro</h3>
+                <span class="text-gaming-accent font-mono font-bold">$2,499</span>
+              </div>
+              <p class="text-xs text-gray-500 mb-4">High-performance gaming chassis with liquid metal cooling.</p>
+              <!-- Specs -->
+              <div class="grid grid-cols-3 gap-2 py-4 border-y border-gaming-border mb-6">
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">GPU</div>
+                  <div class="text-xs font-bold">RTX 4090</div>
+                </div>
+                <div class="text-center border-x border-gaming-border">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">RAM</div>
+                  <div class="text-xs font-bold">32GB DDR5</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">Storage</div>
+                  <div class="text-xs font-bold">2TB SSD</div>
+                </div>
+              </div>
+              <button
+                class="mt-auto w-full py-3 bg-white text-black font-black uppercase text-xs tracking-widest hover:bg-gaming-accent transition-colors">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+          <!-- Product Card 2 -->
+          <article
+            class="product-card bg-gaming-card border border-gaming-border rounded-lg overflow-hidden transition-all duration-300 flex flex-col"
+            data-purpose="product-item">
+            <div class="relative group">
+              <img alt="Gaming PC" class="w-full aspect-[4/3] object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHiv3hA4hSQM3IuHyFRrnpDsfVsRgE7MKNb-kgGXLvV3snUqoyxG1lYATOFshkzo79oc_39jVOWcUbFMpP5_Yd1OzsHC8AhqU9h2vkVbbdezSuGPCjnMfQHjEfS50RCKLW-fQQlRrSAiM8hvoGpUocSwm73Rlb35iP3STpXR-QwEYXtSZJQs0HlI3Us76N11UFdMq1oQ6d56rZLwoMITWuNd16Sx2kxCAuZXX1bwhjxWRofQSUgpq3i9sLmeohAyRn6LP6uphY0Wc" />
+              <div
+                class="absolute top-3 left-3 bg-blue-500 text-white text-[10px] font-black px-2 py-1 rounded uppercase">
+                Free Shipping</div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-bold text-lg leading-tight hover:text-gaming-accent cursor-pointer transition-colors">
+                  Vortex V3 Desktop</h3>
+                <span class="text-gaming-accent font-mono font-bold">$1,899</span>
+              </div>
+              <p class="text-xs text-gray-500 mb-4">Desktop powerhouse with RGB synced ecosystem.</p>
+              <div class="grid grid-cols-3 gap-2 py-4 border-y border-gaming-border mb-6">
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">GPU</div>
+                  <div class="text-xs font-bold">RTX 4070 Ti</div>
+                </div>
+                <div class="text-center border-x border-gaming-border">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">RAM</div>
+                  <div class="text-xs font-bold">16GB DDR5</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">Storage</div>
+                  <div class="text-xs font-bold">1TB NVMe</div>
+                </div>
+              </div>
+              <button
+                class="mt-auto w-full py-3 bg-white text-black font-black uppercase text-xs tracking-widest hover:bg-gaming-accent transition-colors">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+          <!-- Product Card 3 -->
+          <article
+            class="product-card bg-gaming-card border border-gaming-border rounded-lg overflow-hidden transition-all duration-300 flex flex-col"
+            data-purpose="product-item">
+            <div class="relative group">
+              <img alt="Slim Gaming Laptop" class="w-full aspect-[4/3] object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqGQlbXXY4_AI5-1lusnMBVfYlW0l_nWCwdjhyCrJcwgSnNdaSYhYE22CykPIZmCpG3rus7jxdeLiOl6HIVAMvHBe8Wai7AS-9rs4eOorVnHYQfVmWkoPOtlxs8lST58GIzEV_y4Lh5CG-uDFjsRflPudv1rdfeup2KsXcHytc-5DS4557qRKthXlZC7pvNXwCc-8detitF1xhro6RKQJ4H83O3rwBUcFdnEXgNHvmqGFw3b40rQUc7Cm3ZuA5QhVW0FvoM1FBnNI" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-bold text-lg leading-tight hover:text-gaming-accent cursor-pointer transition-colors">
+                  Shadow Blade 14</h3>
+                <span class="text-gaming-accent font-mono font-bold">$1,549</span>
+              </div>
+              <p class="text-xs text-gray-500 mb-4">Ultra-slim portable gaming without compromise.</p>
+              <div class="grid grid-cols-3 gap-2 py-4 border-y border-gaming-border mb-6">
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">GPU</div>
+                  <div class="text-xs font-bold">RTX 3060</div>
+                </div>
+                <div class="text-center border-x border-gaming-border">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">RAM</div>
+                  <div class="text-xs font-bold">16GB LPDDR5</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">Storage</div>
+                  <div class="text-xs font-bold">512GB SSD</div>
+                </div>
+              </div>
+              <button
+                class="mt-auto w-full py-3 bg-white text-black font-black uppercase text-xs tracking-widest hover:bg-gaming-accent transition-colors">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+          <!-- Product Card 4 -->
+          <article
+            class="product-card bg-gaming-card border border-gaming-border rounded-lg overflow-hidden transition-all duration-300 flex flex-col"
+            data-purpose="product-item">
+            <div class="relative group">
+              <img alt="Mid Range PC" class="w-full aspect-[4/3] object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuABPEzILb-xVfww48kihXxLPwg2MTP0RkaSFlE6iCeOb5BMgwwDveL8odA9-xLPaRvyfsBZlwn88c0Td8XfcnAxtBud78EjLZe69x2_rUI9XI8hmz9HXcZWjuzKsYIG_3tnYCj9Axa1S0z7vBPk1tBuR8kMIWZsZcsZa_MCRqyZ_v2BBmLFuKGhyZDbJtrJXmZ-ZU5CV5VdseaF1oCoa-vgMxyXM7lwa_LS-RZN7ytGQAskCuSBe9SprzREwYO_Kbh0wfw13w9pWh4" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-bold text-lg leading-tight hover:text-gaming-accent cursor-pointer transition-colors">
+                  Nexus Core E1</h3>
+                <span class="text-gaming-accent font-mono font-bold">$1,299</span>
+              </div>
+              <p class="text-xs text-gray-500 mb-4">Reliable 1440p gaming performance for creators.</p>
+              <div class="grid grid-cols-3 gap-2 py-4 border-y border-gaming-border mb-6">
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">GPU</div>
+                  <div class="text-xs font-bold">RTX 4060</div>
+                </div>
+                <div class="text-center border-x border-gaming-border">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">RAM</div>
+                  <div class="text-xs font-bold">16GB DDR5</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">Storage</div>
+                  <div class="text-xs font-bold">1TB SSD</div>
+                </div>
+              </div>
+              <button
+                class="mt-auto w-full py-3 bg-white text-black font-black uppercase text-xs tracking-widest hover:bg-gaming-accent transition-colors">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+          <!-- Product Card 5 -->
+          <article
+            class="product-card bg-gaming-card border border-gaming-border rounded-lg overflow-hidden transition-all duration-300 flex flex-col"
+            data-purpose="product-item">
+            <div class="relative group">
+              <img alt="High End PC" class="w-full aspect-[4/3] object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuaAAilOjGYq3GaBYySfbH5CmqN1pPXptx5KH2ZUvc6O9dvr3zYc2TJ8sYVxX4xR00v46XB4hzgAmj5rpy6Y0UiGElUENtQgAXudyTbO7fWqLbNTta0UQChgcH1C8R5CtJB-MIJ9Hjz-a6Xy9MYgaAGHOslb6YwqcOo6pp1hwNa3pTXNNim0HxlMBneGn_qAtFqapDq3xm7Jd84v6y0gK7MCsmRBWHLzEbLJbWEbQ7qawJGRq940ZglyxgPMMRZleoph3YuG7FY9Q" />
+              <div
+                class="absolute top-3 left-3 bg-red-600 text-white text-[10px] font-black px-2 py-1 rounded uppercase">
+                Hot Deal</div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-bold text-lg leading-tight hover:text-gaming-accent cursor-pointer transition-colors">
+                  Zenith Alpha Desktop</h3>
+                <span class="text-gaming-accent font-mono font-bold">$3,199</span>
+              </div>
+              <p class="text-xs text-gray-500 mb-4">Ultimate multitasking and 4K gaming rig.</p>
+              <div class="grid grid-cols-3 gap-2 py-4 border-y border-gaming-border mb-6">
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">GPU</div>
+                  <div class="text-xs font-bold">RTX 4080</div>
+                </div>
+                <div class="text-center border-x border-gaming-border">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">RAM</div>
+                  <div class="text-xs font-bold">64GB DDR5</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">Storage</div>
+                  <div class="text-xs font-bold">4TB RAID</div>
+                </div>
+              </div>
+              <button
+                class="mt-auto w-full py-3 bg-white text-black font-black uppercase text-xs tracking-widest hover:bg-gaming-accent transition-colors">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+          <!-- Product Card 6 -->
+          <article
+            class="product-card bg-gaming-card border border-gaming-border rounded-lg overflow-hidden transition-all duration-300 flex flex-col"
+            data-purpose="product-item">
+            <div class="relative group">
+              <img alt="Budget Gaming Laptop" class="w-full aspect-[4/3] object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFPI7yvsqmJP1HiUR37thYXleeRc67tMu6DUjh8VDWpdfjGcob5OvtLQK-WAGiTRjhXq51yk63CdjGooO4-FCBkIaB5MBQhOCJJ9sj4WcPv1WgZTyCoTUDzF3MIqUit2LMX08neuBqgRRkQVXvBjX1x7E6kRSh5nUD7mq0Osbi02y9on8HXSw38CQJG-0MDu9NoQoR1Qu6Wg7quxkgGDuv-dP9NCdwmjiiSWv-Yb-1Jx-SOknhT0rfqPI_UwqJNkX2WsslXNLu19w" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-bold text-lg leading-tight hover:text-gaming-accent cursor-pointer transition-colors">
+                  Strike 15 Budget</h3>
+                <span class="text-gaming-accent font-mono font-bold">$799</span>
+              </div>
+              <p class="text-xs text-gray-500 mb-4">The perfect entry point for competitive esports.</p>
+              <div class="grid grid-cols-3 gap-2 py-4 border-y border-gaming-border mb-6">
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">GPU</div>
+                  <div class="text-xs font-bold">GTX 1650</div>
+                </div>
+                <div class="text-center border-x border-gaming-border">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">RAM</div>
+                  <div class="text-xs font-bold">8GB DDR4</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-[10px] uppercase text-gray-500 mb-1">Storage</div>
+                  <div class="text-xs font-bold">256GB SSD</div>
+                </div>
+              </div>
+              <button
+                class="mt-auto w-full py-3 bg-white text-black font-black uppercase text-xs tracking-widest hover:bg-gaming-accent transition-colors">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center items-center gap-4">
+          <button class="p-2 border border-gaming-border hover:bg-gaming-card rounded disabled:opacity-50">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </button>
+          <div class="flex gap-2">
+            <button
+              class="w-8 h-8 flex items-center justify-center bg-gaming-accent text-black font-bold rounded">1</button>
+            <button
+              class="w-8 h-8 flex items-center justify-center border border-gaming-border hover:bg-gaming-card rounded transition-colors">2</button>
+            <button
+              class="w-8 h-8 flex items-center justify-center border border-gaming-border hover:bg-gaming-card rounded transition-colors">3</button>
+          </div>
+          <button class="p-2 border border-gaming-border hover:bg-gaming-card rounded">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <!-- END: Product Grid -->
+    </div>
+  </main>
+  <!-- BEGIN: Footer -->
+  <footer class="bg-gaming-card border-t border-gaming-border mt-20" data-purpose="site-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-4">Laptops</h4>
+          <ul class="text-sm text-gray-500 space-y-2">
+            <li><a class="hover:text-gaming-accent" href="#">RTX 40-Series</a></li>
+            <li><a class="hover:text-gaming-accent" href="#">Ultra Slim</a></li>
+            <li><a class="hover:text-gaming-accent" href="#">17-inch Monsters</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-4">Desktops</h4>
+          <ul class="text-sm text-gray-500 space-y-2">
+            <li><a class="hover:text-gaming-accent" href="#">Pre-built Rigs</a></li>
+            <li><a class="hover:text-gaming-accent" href="#">Custom Loops</a></li>
+            <li><a class="hover:text-gaming-accent" href="#">Mini-ITX Builds</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-4">Company</h4>
+          <ul class="text-sm text-gray-500 space-y-2">
+            <li><a class="hover:text-gaming-accent" href="#">Our Story</a></li>
+            <li><a class="hover:text-gaming-accent" href="#">Careers</a></li>
+            <li><a class="hover:text-gaming-accent" href="#">Sustainability</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-4">Newsletter</h4>
+          <p class="text-xs text-gray-500 mb-4">Get the latest drops and discounts.</p>
+          <div class="flex">
+            <input
+              class="bg-gaming-dark border-gaming-border text-sm px-4 py-2 w-full focus:ring-gaming-accent focus:border-gaming-accent"
+              placeholder="Email" type="email" />
+            <button class="bg-gaming-accent text-black px-4 py-2 font-bold text-xs uppercase">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-gaming-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-gray-600">© 2024 Apex Gear Industries. All rights reserved.</p>
+        <div class="flex gap-6 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all">
+          <img alt="Visa" class="h-6"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNimZESPiDO9DmSjmqc9MxAHP3I3QpzNOyhLzLf5_vwllA6696C2hL1xuzwGDIploRtOVGUgjm9UfVlmgptpSDZv_lzpKPvRsq_A6-Yi_DxcJ3Mj3eBKtKl0R4IdvNZh5tCcvnTp42ruQh4eBcvIx2ZD6ocVcJSPgiCymEKGtZMEf0o6rWmrZjj8NzJrTPd1-GnI6GgLp93JRyqZdSvfNFCm8S9S6CfsULa5asIUuIdBew2DuOwnjbf9h2B3sKVqu2t9Bfb8-IkGw" />
+          <img alt="Mastercard" class="h-6"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8wz6gRYjP49EwnOpPJg1N8e8ZFZxNSyWnaI-R39MiqkAUHkrY2Ju6fNkriPv_7DI2AFwsIW51tvLwzcjooISSc7f5WVmSIgoaHIVs8Ny4YBc8YfZVF5c-dMG_TwQ0OOykcs4uXJJO9Cdq4cMnLvTL1SuJE02TIWTmPjNrfnEg4KycdwfnA9x2f1tgfOw-tjGPPosha3BzjyR-rwrPrMtfLjosiiS_M0IaAtzrIDWr7weIbrODG5RgXySwjg99acbPJ8IyHEpfsK4" />
+          <img alt="PayPal" class="h-6"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBouUN3MzdxRyMxss8_rDjjpWuHjHvCdKS_MqA2MnMCt4X3r-y35ch0Z5KWV5cxcJT7Io05L_-VMw_b_MGdMaLZq2uGl8T_NjqbH1tPReHi_-AJYIH1NuBDyiUL5UClKkaeFywgFApETz8I6DuthtEhcsqz4YPbXH4hf3e_y2S7xTrr9COXdabhu9hcB_ST3ZYXrNZ4Y7h1vUUfXFtexCqhCXxUGXL95YPqPHKYxbS8WjvHvOPZsRuDBQuS2AHtiFAcaarWLLkda4Q" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+</body>
+
+</html>
